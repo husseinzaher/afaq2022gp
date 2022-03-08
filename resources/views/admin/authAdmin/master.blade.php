@@ -41,9 +41,6 @@
 
 </div>
 
-<div class="copyright"> {{ date('Y') }} © تطوير بواسطة
-    <a target="_blank" href="https://almosamemtech.com/">   شركة المصمم. </a>
-</div>
 
 </body>
 </html>

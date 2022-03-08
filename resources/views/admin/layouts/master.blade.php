@@ -78,8 +78,8 @@
     </div>
     <!-- BEGIN FOOTER -->
     <div class="page-footer">
-        <div class="page-footer-inner"> {{ date('Y') }} &copy; تطوير بواسطة
-            <a target="_blank" href="https://almosamemtech.com/">   شركة المصمم. </a>
+        <div class="page-footer-inner">
+
         </div>
         <div class="scroll-to-top">
             <i class="icon-arrow-up"></i>

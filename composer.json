@@ -5,7 +5,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^7.4|^8.0",
         "barryvdh/laravel-cors": "^2.1",
         "code-lts/laravel-fcm": "^1.6",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -13,6 +13,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.4",
+        "spatie/laravel-medialibrary": "^9.11",
         "taqnyat/php": "^1.0"
     },
     "require-dev": {

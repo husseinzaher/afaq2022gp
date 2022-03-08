@@ -20,9 +20,7 @@ class LoginController extends Controller
     | to conveniently provide its functionality to your applications.
     |
     */
-
-
-
+	
     /**
      * Create a new controller instance.
      *
@@ -39,31 +37,27 @@ class LoginController extends Controller
     public function login(Request $request)
     {
         App::setLocale('ar');
-        $this->validate($request,[
+       $validate = $this->validate($request,[
             'email'=>'required|email',
             'password'=>'required|min:6',
         ]);
+	 
             // Verified - send email
             $credential =[
                 'email'=>$request->email,
                 'password'=>$request->password
             ];
+            
             if (Auth::guard('admin')->attempt($credential, $request->member)){
                 return redirect()->intended(route('admin.home'));
             }
             return redirect()->back()->withInput($request->only(['email','remember']))->with('warning_login', trans('messages.warning_login'));
-
-
-
+            
     }
 
     public function logout(Request $request)
     {
-//        dd(Auth::guard('admin')->user()->id);
         Auth::guard('admin')->logout();
-
-//        $request->session()->invalidate();
-
         return redirect('/admin/login');
     }
 }

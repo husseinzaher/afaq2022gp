@@ -4,7 +4,8 @@
         <!-- BEGIN LOGO -->
         <div class="page-logo">
             <a href="">
-                <img src="{{ URL::asset('img/WhatsApp Image 2019-12-14 at 5.29.02 PM.jpeg') }}" style="width: 104px; height: 50px" alt="logo" class="logo-default" /> </a>
+                <img src="{{ URL::asset('admin/img/logo.png') }}" style="width: 104px; height: 50px"
+                     alt="logo" class="logo-default" /> </a>
             <div class="menu-toggler sidebar-toggler">
                 <span></span>
             </div>
