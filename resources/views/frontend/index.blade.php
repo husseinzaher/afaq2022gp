@@ -3,18 +3,18 @@
 @section('content')
 
 
-@include('frontEnd.Sections.mainHeader')
+@include('frontend.Sections.mainHeader')
 
-@include('frontEnd.Sections.candidates')
-@include('frontEnd.Sections.brief')
-@include('frontEnd.Sections.electoral_program')
-@include('frontEnd.Sections.electoral_target')
-@include('frontEnd.Sections.afaqGroup')
-@include('frontEnd.Sections.afaqTweet')
-@include('frontEnd.Sections.campaignNews')
-@include('frontEnd.Sections.campianActivites')
-@include('frontEnd.Sections.eventDetails')
-@include('frontEnd.Sections.tech_support')
+@include('frontend.Sections.candidates')
+@include('frontend.Sections.brief')
+@include('frontend.Sections.electoral_program')
+@include('frontend.Sections.electoral_target')
+@include('frontend.Sections.afaqGroup')
+@include('frontend.Sections.afaqTweet')
+@include('frontend.Sections.campaignNews')
+@include('frontend.Sections.campianActivites')
+@include('frontend.Sections.eventDetails')
+@include('frontend.Sections.tech_support')
 
 
 @endsection
