@@ -1,7 +1,7 @@
 @extends('admin.layouts.master')
 
 @section('title')
-    السلايدر
+    اخبار الحمله
 @endsection
 
 @section('styles')
@@ -61,7 +61,7 @@
 
                                     <a type="button" data-toggle="modal"
                                        data-target="#exampleModalScrollable">
-                                        <img class="imageresource" src="{{asset('/uploads/sliders/')}}" height="100"
+                                        <img class="imageresource" src="{{$slider->getFirstMediaUrl('photo')}}" height="100"
                                              width="180">
                                     </a>
                                     <div class="modal fade" id="exampleModalScrollable" tabindex="-1"
@@ -69,7 +69,7 @@
                                         <div class="modal-dialog modal-dialog-scrollable" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalScrollableTitle">صورة السلايدر</h5>
+                                                    <h5 class="modal-title" id="exampleModalScrollableTitle">صورة الحملة</h5>
                                                     <button type="button" class="close" data-dismiss="modal"
                                                             aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
@@ -77,7 +77,7 @@
                                                 </div>
                                                 <div class="modal-body">
 
-                                                    <img src="{{asset('/uploads/sliders/')}}"
+                                                    <img src="{{$slider->getFirstMediaUrl('photo')}}"
                                                          width="500px"/>
                                                 </div>
                                                 <div class="modal-footer">
