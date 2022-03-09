@@ -1,7 +1,7 @@
 @extends('admin.layouts.master')
 
 @section('title')
-    اخبار الحمله
+    المرشحين
 @endsection
 
 @section('styles')
@@ -27,7 +27,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="btn-group">
-                                    <a class="btn sbold green" href="{{route('admin.campaign-news.create')}}"> إضافة جديد
+                                    <a class="btn sbold green" href="{{route('admin.candidates.create')}}"> إضافة جديد
                                         <i class="fa fa-plus"></i>
                                     </a>
                                 </div>
@@ -103,7 +103,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="delete_user" data="{{ $slider->id }}" data_name="{{ $slider->name }}" >
+                                                <a class="delete_user" data="{{ $slider->id }}" data_name="{{ $slider->name }}">
                                                     <i class="fa fa-key"></i> مسح
                                                 </a>
                                             </li>
@@ -150,18 +150,11 @@
                     cancelButtonText: "إغلاق",
                     closeOnConfirm: false
                 }, function () {
-
                     {{--var url = '{{ route("imageProductRemove", ":id") }}';--}}
-
                             {{--url = url.replace(':id', id);--}}
-
-                        window.location.href = `{{ url('/') }}/admin/campaign-news.destroy/${id}`;
-
-
+                        window.location.href = `{{ url('/') }}/admin/candidates/delete/${id}`;
                 });
-
             });
-
         });
     </script>
 

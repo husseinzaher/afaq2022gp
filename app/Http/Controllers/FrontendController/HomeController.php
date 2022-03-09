@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\FrontendController;
 
 use App\Http\Controllers\Controller;
+use App\Models\Candidate;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -15,6 +16,13 @@ class HomeController extends Controller
      */
     public function index()
     {
+    	
         return view('frontend.index');
+    }
+    
+    public function candidates($id)
+    {
+    	$data = Candidate::findOrFail($id);
+        return view('frontend.candidate',get_defined_vars());
     }
 }

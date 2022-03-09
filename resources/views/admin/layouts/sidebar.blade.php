@@ -52,6 +52,14 @@
                 </a>
             </li>
 
+            <li class="nav-item start {{Route::is('admin.candidates.index')?'active open':''}}">
+                <a href="{{route('admin.candidates.index')}}" class="nav-link nav-toggle">
+                    <i class="icon-badge"></i>
+                    <span class="title">المرشحين</span>
+                    <span class="{{Route::is('admin.candidates.index')?'selected':''}}"></span>
+                </a>
+            </li>
+
         </ul>
         <!-- END SIDEBAR MENU -->
     </div>

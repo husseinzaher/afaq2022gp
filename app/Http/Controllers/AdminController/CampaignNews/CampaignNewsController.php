@@ -16,7 +16,8 @@
 		public function index()
 		{
 			$data = CampaignNews::get();
-			return view('admin.campaign-news.index',get_defined_vars());
+			
+			return view('admin.campaign-news.index', get_defined_vars());
 		}
 		
 		/**
@@ -53,7 +54,6 @@
 			}
 			
 			return redirect(route('admin.campaign-news.index'));
-			
 		}
 		
 		/**
@@ -96,8 +96,10 @@
 		 * @param  \App\Models\CampaignNews  $campaignNews
 		 * @return \Illuminate\Http\Response
 		 */
-		public function destroy(CampaignNews $campaignNews)
+		public function delete($id)
 		{
-			//
+			$data = CampaignNews::findOrFail($id);
+			$data->delete();
+			return back();
 		}
 	}
