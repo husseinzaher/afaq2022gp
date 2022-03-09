@@ -22,7 +22,7 @@ class HomeController extends Controller
     
     public function candidates($id)
     {
-    	$data = Candidate::findOrFail($id);
+	    $candidateData = Candidate::findOrFail($id);
         return view('frontend.candidate',get_defined_vars());
     }
 }

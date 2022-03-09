@@ -1,10 +1,10 @@
-@isset($candateData)
+@isset($candidateData)
 <section class="candidates" id="candidates">
     <div class="container text-center">
         <h2 class="main_sec_title"> <img src="{{asset('frontend/img/button_side.png')}}" alt=""><span>
                 المرشحين</span><img class="left" src="{{asset('frontend/img/button_side.png')}}" alt=""></h2>
         <div class="owl-carousel owl-theme">
-            @forelse($candateData as $v)
+            @forelse($candidateData as $v)
             <div class="card_container">
                 <div class="card">
                     <div class="front">
