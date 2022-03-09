@@ -12,11 +12,11 @@
                 </div>
             </li>
 
-            <li class="nav-item start active open">
+            <li class="nav-item start {{Route::is('admin.home')?'active open':''}}">
                 <a href="/admin/home" class="nav-link nav-toggle">
                     <i class="icon-home"></i>
                     <span class="title">الرئيسية</span>
-                    <span class="selected"></span>
+                    <span class="{{Route::is('admin.home')?'selected':''}}"></span>
 
                 </a>
             </li>
@@ -43,6 +43,15 @@
                     </li>
                 </ul>
             </li>
+
+            <li class="nav-item start {{Route::is('admin.campaign-news.index')?'active open':''}}">
+                <a href="{{route('admin.campaign-news.index')}}" class="nav-link nav-toggle">
+                    <i class="icon-badge"></i>
+                    <span class="title">أخبار الحملة</span>
+                    <span class="{{Route::is('admin.campaign-news.index')?'selected':''}}"></span>
+                </a>
+            </li>
+
         </ul>
         <!-- END SIDEBAR MENU -->
     </div>

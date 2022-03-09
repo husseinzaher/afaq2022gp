@@ -2,18 +2,11 @@
 
 namespace App\Http\Controllers\AdminController;
 
-use App\City;
-
-use App\Country;
-use App\FoodCategory;
 use App\Http\Controllers\Controller;
-use App\User;
-use App\UserDevice;
-use App\Department;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use DB;
-use App\UserDepartment;
 use Auth;
 use Image;
 use Illuminate\Support\Facades\Storage;
