@@ -16,8 +16,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-    	
-        return view('frontend.index');
+	    $candidateData = Candidate::get();
+        return view('frontend.index',get_defined_vars());
     }
     
     public function candidates($id)

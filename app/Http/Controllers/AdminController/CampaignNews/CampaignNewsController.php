@@ -53,7 +53,7 @@
 				$data->addMedia($request['photo'])->toMediaCollection('photo');
 			}
 			
-			return redirect(route('admin.campaign-news.index'));
+			return redirect(route('admin.candidates.index'));
 		}
 		
 		/**
