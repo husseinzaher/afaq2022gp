@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <div class="view_candidate_info">{{$v->title}}
+                            <div class="view_candidate_info">{!! $v->title  !!}
                                 <button><i class="fa-solid fa-arrow-up-long"></i></button>
                             </div>
                         </div>
@@ -26,11 +26,11 @@
                     <div class="back">
                         <div class="content">
                             <div class="card-top">
-                                <h2 class="title">{{$v->title}}</h2>
+                                <h2 class="title">{!! $v->title  !!}</h2>
                             </div>
                             <div class="card-body">
                                 <p class="desc">
-                                    {{$v->hint}}
+                                    {!! $v->hint!!}
                                 </p>
                             </div>
                             {{--<div class="card-footer"><a class="view_candidate_info" href="{{route('frontend.candate.show',$v->id)}}">اقرا
